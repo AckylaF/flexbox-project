@@ -1,0 +1,100 @@
+.cabecalhoPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalhoPrincipal .cabecalhoPrincipal-nav{
+    display: flex;
+}
+.conteudoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.conteudoPrincipal-cursos-link{
+    width: 23%;
+}
+.videoSobre .container{
+    display: flex;
+}
+.videoSobre-sobre{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    text-align: center;
+}
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+.videoSobre-video{
+    flex-grow: 1;
+    flex-shrink: 2
+
+}
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores .rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 75%;
+}
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
+
+
+/* Parte mobile */
+
+@media(max-width: 768px){
+    .cabecalhoPrincipal .container{
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    .cabecalhoPrincipal .cabecalhoPrincipal-nav{
+        flex-direction: column;
+    }
+    .cabecalhoPrincipal-nav-link-app{
+        order: -1;
+    }
+    .conteudoPrincipal-cursos{
+        flex-direction: column;
+    }
+    .conteudoPrincipal-cursos-link{
+        width: 98%;
+    }
+    .videoSobre .container{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 600px;
+    }
+    .videoSobre-sobre{
+        text-align: center;
+        justify-content: space-between;
+        height: 45%;
+        width: initial;
+    }
+    .videoSobre-video{
+        margin: 0 auto;
+    }
+    .rodapePrincipal-navMap-list{
+        flex-wrap: nowrap;
+        height: initial;
+    }
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodapePrincipal-patrocinadores .rodapePrincipal-patrocinadores-list{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
